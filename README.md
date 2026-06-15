@@ -1,4 +1,4 @@
-# goruntuluchat.github.io
+
 # 📺 ChatTV - WebRTC & Node.js Canlı Sohbet Platformu
 
 ChatTV, modern WebRTC ve Node.js altyapısı ile geliştirilmiş, anonim görüntülü ve yazılı sohbet platformudur. Bu depo, projenin arayüz ve entegrasyon dosyalarını içermektedir.
