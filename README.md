@@ -1,11 +1,9 @@
 
-# 📺 ChatTV - WebRTC & Node.js Canlı Sohbet Platformu
-
+🤖 **Modern WebRTC & Node.js Altyapısı**  
 ChatTV, modern WebRTC ve Node.js altyapısı ile geliştirilmiş, anonim görüntülü ve yazılı sohbet platformudur. Bu depo, projenin arayüz ve entegrasyon dosyalarını içermektedir.
 
 🌐 **Resmi Web Sitesi:** [chattv.com.tr](https://chattv.com.tr)  
 🛡 **Sistem Durumu:** Çevrimiçi
-
 ---
 
 ## 🚀 Öne Çıkan Özellikler
