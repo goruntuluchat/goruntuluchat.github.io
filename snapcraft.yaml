@@ -1,0 +1,29 @@
+name: goruntuluchat # Snap mağazasındaki benzersiz adı
+base: core22 # Kullanılacak taban sistemi (Ubuntu 22.04 LTS)
+version: '1.0'
+summary: Goruntulu Chat Web Application
+description: |
+  Goruntulu Chat platformunun masaüstü/yerel web sunucusu sürümüdür.
+
+grade: stable # stable veya devel
+confinement: strict # strict (güvenli/izole) veya devmode
+
+apps:
+  goruntuluchat:
+    command: bin/darkhttpd $SNAP/html --port 8080
+    daemon: simple # Arka planda otomatik çalışması için (isteğe bağlı)
+    plugs: [network, network-bind]
+
+parts:
+  web-files:
+    plugin: dump
+    source: .
+    organize:
+      '*': html/ # Tüm web dosyalarını html klasörüne taşır
+    stage:
+      - html
+
+  web-server:
+    plugin: nil
+    stage-packages:
+      - darkhttpd # Statik dosyaları sunacak hafif web sunucusu
